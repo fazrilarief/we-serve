@@ -8,7 +8,7 @@ body {
 
 @layer components {
   .accordion-header {
-    @apply cursor-pointer px-5 py-5;
+    @apply cursor-pointer;
   }
 
   .accordion-header.active img {
@@ -16,9 +16,6 @@ body {
     transform: rotateX(180deg);
   }
 
-  .accordion-header.active {
-    @apply rounded-b-none rounded-t-2xl;
-  }
   .accordion-body {
     @apply max-h-0 overflow-hidden transition-all duration-300 ease-in-out;
   }
